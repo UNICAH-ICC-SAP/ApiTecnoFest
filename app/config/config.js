@@ -3,7 +3,7 @@ module.exports = {
     DB: {
         HOST: '51.161.13.38',
         USER: 'root',
-        PASSWORD: '',
+        PASSWORD: 'Contra1234',
         DATABASE: 'tecnofest2024'
     }
 };
