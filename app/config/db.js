@@ -1,11 +1,13 @@
 const mysql = require('mysql');
 const CONFIG = require('./config');
 
+
 const connection = mysql.createConnection({
     host: CONFIG.DB.HOST,
     user: CONFIG.DB.USER,
     password: CONFIG.DB.PASSWORD,
-    database: CONFIG.DB.DATABASE
+    database: CONFIG.DB.DATABASE,
+    port: CONFIG.DB.PORT
 });
 
 module.exports = {
@@ -20,3 +22,7 @@ module.exports = {
     },
     getConnection: () => connection
 };
+
+
+
+

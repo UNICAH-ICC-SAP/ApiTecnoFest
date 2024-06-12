@@ -6,7 +6,7 @@ const App = require('./app/app');
 
 DataBase.connect();
 
-App.listen(CONFIG.port, function (error){
+App.listen(CONFIG.APP_PORT, function (error) {
     if (error) return console.error(error);
-    console.log('Server running on port:  ${CONFIG.PORT}');
+    console.log(`Server running on port:  ${CONFIG.APP_PORT}`);
 });
