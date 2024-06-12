@@ -1,10 +1,10 @@
 'use strict'
 
-const DataBase = require('./app/config/db');
+// const DataBase = require('./app/config/db');
 const CONFIG = require('./app/config/config');
 const App = require('./app/app');
 
-DataBase.connect();
+// DataBase.connect();
 
 App.listen(CONFIG.APP_PORT, function (error) {
     if (error) return console.error(error);
